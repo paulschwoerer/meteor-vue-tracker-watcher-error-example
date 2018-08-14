@@ -56,12 +56,21 @@ export default {
     firstNote () {
       return this.notes.length && this.notes[0]
     },
+
+    notesCount() {
+      return this.notes ? this.notes.length : -1;
+    }
   },
 
   watch: {
     '$subReady.notes' (value) {
       console.log(value)
     },
+
+    // Comment this part out and see the computed property working
+    notesCount(value) {
+      console.log(value)
+    }
   },
 
   methods: {
