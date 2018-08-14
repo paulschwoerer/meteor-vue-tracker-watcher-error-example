@@ -59,6 +59,7 @@ export default {
 
     notesCount() {
       return this.notes ? this.notes.length : -1;
+      // return this.$subReady.notes ? this.notes.length : -1;
     }
   },
 
@@ -67,9 +68,14 @@ export default {
       console.log(value)
     },
 
-    // Comment this part out and see the computed property working
+    // Comment this part out and see the corresponding computed property working
     notesCount(value) {
       console.log(value)
+    },
+
+    // Comment this part out and see the corresponding computed property working
+    firstNote(val) {
+      console.log(val)
     }
   },
 
